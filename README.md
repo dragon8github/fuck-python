@@ -1,3 +1,16 @@
-# My Awesome Book
+### 安装pycharm
 
-This file file serves as your book's preface, a great place to describe your book's content and ideas.
+> http://www.jetbrains.com/pycharm/?fromMenu
+
+
+
+### 打开文档
+
+> https://docs.python.org/3/
+>
+> https://docs.python.org/3/tutorial/index.html
+
+
+
+
+

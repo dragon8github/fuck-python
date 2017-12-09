@@ -1,8 +1,8 @@
 # 函数的定义和参数
 
-https://docs.python.org/3.7/tutorial/controlflow.html\#defining-functions
+[https://docs.python.org/3.7/tutorial/controlflow.html\#defining-functions](https://docs.python.org/3.7/tutorial/controlflow.html#defining-functions)
 
-https://docs.python.org/3.7/tutorial/controlflow.html\#more-on-defining-functions
+[https://docs.python.org/3.7/tutorial/controlflow.html\#more-on-defining-functions](https://docs.python.org/3.7/tutorial/controlflow.html#more-on-defining-functions)
 
 #### 不定数参数
 
@@ -90,6 +90,13 @@ print(item) # [0, 4, 16, 36, 64]
 # center right left
 item=[a**2 for a in range(0, 10, 2) if a>4]
 print(item) # [36, 64]
+
+#####################################################
+
+def do(n):
+    return n + 2
+
+print(list(map(do, [x for x in range(0,10) if x > 5]))) # [8, 9, 10, 11]
 ```
 
 

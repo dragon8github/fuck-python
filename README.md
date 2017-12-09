@@ -2,6 +2,10 @@
 
 > [http://www.jetbrains.com/pycharm/?fromMenu](http://www.jetbrains.com/pycharm/?fromMenu)
 
+| 组合键 | 功能 |
+| :--- | :--- |
+| CTRL + SHIFT + L | 格式化代码 |
+
 #### 官方文档
 
 > [https://docs.python.org/3/library/functions.html?highlight=built](https://docs.python.org/3/library/functions.html?highlight=built)
@@ -22,7 +26,7 @@
 
 > [https://docs.python.org/3/library/functions.html?highlight=built](https://docs.python.org/3/library/functions.html?highlight=built)
 
-### 
+
 
 ### 内置类型库 Built-in Constants
 
@@ -32,5 +36,5 @@
 
 ### 内置模块库improved-modules
 
-https://docs.python.org/3/whatsnew/3.6.html\#improved-modules
+[https://docs.python.org/3/whatsnew/3.6.html\#improved-modules](https://docs.python.org/3/whatsnew/3.6.html#improved-modules)
 

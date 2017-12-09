@@ -2,13 +2,15 @@
 
 > [http://www.jetbrains.com/pycharm/?fromMenu](http://www.jetbrains.com/pycharm/?fromMenu)
 
-### 官方文档
 
-> [https://docs.python.org/3/](https://www.gitbook.com/book/dragon8github/fuck-python/edit#)
 
-#### 官方API文档
+#### 官方文档
 
+> https://docs.python.org/3/library/functions.html?highlight=built
+>
 > [https://docs.python.org/3/tutorial/index.html](https://docs.python.org/3/tutorial/index.html)
+
+
 
 不管你学什么语言，都逃不出如下套路（部分）
 

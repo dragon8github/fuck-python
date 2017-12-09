@@ -6,7 +6,7 @@
 
 ## 基础篇
 
-* [关键字参数、令人发指的list类型、range序列、map函数、class定义初步](ji-chu-pian/guan-jian-zi-can-shu-3001-ling-ren-fa-zhi-de-list-lei-xing-3001-range-xu-lie-3001-map-han-shu-3001-class-ding-yi-chu-bu.md)
+* [函数参数、令人发指的list类型、range序列、map函数、class定义初步](ji-chu-pian/guan-jian-zi-can-shu-3001-ling-ren-fa-zhi-de-list-lei-xing-3001-range-xu-lie-3001-map-han-shu-3001-class-ding-yi-chu-bu.md)
 * 字符串的不可变性、类的私有属性、特殊属性、字典数据类型
 * 多版本python共存、模块、包的导入、locals\(\)、globals\(\)、sys.path的作用
 * pip的使用、安装虚拟环境\(venv\)、试玩爬虫相关库\(beautiful soup\)

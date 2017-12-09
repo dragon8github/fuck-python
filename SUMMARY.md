@@ -6,8 +6,7 @@
 
 ## 基础篇
 
-* [自我产生入门的能力、数据类型String、自定义函数 ](chapter1.md)
-* 学技术的套路、关键字参数、令人发指的list类型、range序列、map函数、class定义初步
+* 关键字参数、令人发指的list类型、range序列、map函数、class定义初步
 * 字符串的不可变性、类的私有属性、特殊属性、字典数据类型
 * 多版本python共存、模块、包的导入、locals\(\)、globals\(\)、sys.path的作用
 * pip的使用、安装虚拟环境\(venv\)、试玩爬虫相关库\(beautiful soup\)

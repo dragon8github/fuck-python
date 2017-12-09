@@ -80,7 +80,12 @@ print(list(range(0, 10)))
 
 item=[a**2 for a in range(0, 10, 2)]
 print(item)
+
+#####################################################
+
+item=[a**2 for a in range(0, 10, 2) if a>4]
+print(item)
 ```
 
-![](/assets/124123123import.png)
+![](/assets/1231231513123import.png)
 

@@ -2,13 +2,9 @@
 
 > [http://www.jetbrains.com/pycharm/?fromMenu](http://www.jetbrains.com/pycharm/?fromMenu)
 
-
-
 ### 官方文档
 
 > [https://docs.python.org/3/](https://www.gitbook.com/book/dragon8github/fuck-python/edit#)
-
-
 
 #### 官方API文档
 

@@ -61,7 +61,9 @@ showme("Lee", 1, 2, 3, 4, age=12, sex='女')
 items=[]
 for x in range(0, 10):
     items.append(x)
+    
 print(items)
+
 ###################################################
 items=[]
 for x in range(10, 0, -1):

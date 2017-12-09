@@ -18,19 +18,19 @@
 6. 如何和各种第三方库交互？
 7. 是否有啥好的框架可以用？
 
-
-
-
-
 ### 内置函数库 Built-in Functions
 
-> https://docs.python.org/3/library/functions.html?highlight=built
+> [https://docs.python.org/3/library/functions.html?highlight=built](https://docs.python.org/3/library/functions.html?highlight=built)
 
 ### 
 
 ### 内置类型库 Built-in Constants
 
-> https://docs.python.org/3/library/constants.html
+> [https://docs.python.org/3/library/constants.html](https://docs.python.org/3/library/constants.html)
 
 
+
+### 内置模块库improved-modules
+
+https://docs.python.org/3/whatsnew/3.6.html\#improved-modules
 

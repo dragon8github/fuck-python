@@ -61,16 +61,21 @@ showme("Lee", 1, 2, 3, 4, age=12, sex='女')
 items=[]
 for x in range(0, 10):
     items.append(x)
-    
+
 print(items)
 
 ###################################################
+
 items=[]
 for x in range(10, 0, -1):
     items.append(x)
 
 print(items)
+
+#####################################################
+
+print(list(range(0, 10)))
 ```
 
-![](/assets/512312312import.png)
+![](/assets/134123123import.png)
 

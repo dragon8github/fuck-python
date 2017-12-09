@@ -99,5 +99,28 @@ def do(n):
 print(list(map(do, [x for x in range(0,10) if x > 5]))) # [8, 9, 10, 11]
 ```
 
+---
+
+# Class的初步定义和使用
+
+```py
+class Me:
+    def __init__(self, name):
+        self.name = name
+
+    def show(self):
+        print(self.name)
+
+    @staticmethod
+    def version():
+        print('1.0')
+
+
+me = Me('Lee')
+me.show() # Lee
+Me.version() # 1.0
+
+```
+
 
 

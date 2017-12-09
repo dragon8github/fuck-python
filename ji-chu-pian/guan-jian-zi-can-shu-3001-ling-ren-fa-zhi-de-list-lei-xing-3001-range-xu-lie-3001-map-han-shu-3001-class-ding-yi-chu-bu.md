@@ -49,11 +49,9 @@ showme("Lee", 1, 2, 3, 4, age=12, sex='女')
 
 ### 强大到令人发指的Data Structures
 
-https://docs.python.org/3/tutorial/datastructures.html
+[https://docs.python.org/3/tutorial/datastructures.html](https://docs.python.org/3/tutorial/datastructures.html)
 
 ![](/assets/15123123import.png)
-
-
 
 ---
 
@@ -64,7 +62,7 @@ items=[]
 for x in range(0, 10):
     items.append(x)
 print(items)
-
+###################################################
 items=[]
 for x in range(10, 0, -1):
     items.append(x)

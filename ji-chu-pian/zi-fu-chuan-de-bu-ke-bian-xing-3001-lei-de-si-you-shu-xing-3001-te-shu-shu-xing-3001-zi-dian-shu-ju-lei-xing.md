@@ -131,7 +131,10 @@ class People:
         self.age = []
 
 print(People.__dict__)
-# {'__module__': '__main__', '_People__sex': '男', '__init__': <function People.__init__ at 0x000001BFF82DC158>, '__dict__': <attribute '__dict__' of 'People' objects>, '__weakref__': <attribute '__weakref__' of 'People' objects>, '__doc__': None}
+# {'__module__': '__main__', '_People__sex': '男', 
+# '__init__': <function People.__init__ at 0x000001BFF82DC158>, 
+# '__dict__': <attribute '__dict__' of 'People' objects>, 
+# '__weakref__': <attribute '__weakref__' of 'People' objects>, '__doc__': None}
 ```
 
 

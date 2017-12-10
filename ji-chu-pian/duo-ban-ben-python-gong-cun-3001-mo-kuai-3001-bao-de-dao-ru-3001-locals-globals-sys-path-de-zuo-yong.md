@@ -4,7 +4,7 @@
 
 ---
 
-### 模块/包的导入
+### 模块的导入
 
 [https://docs.python.org/3/tutorial/modules.html](https://docs.python.org/3/tutorial/modules.html)
 
@@ -37,7 +37,7 @@ print(functions.name) # Lee
 
 ---
 
-### import from
+### import from 语法的使用
 
 ```py
 from functions import show,name # versions is 1.0
@@ -46,6 +46,8 @@ show() # Lee
 
 print(name) # Lee
 ```
+
+---
 
 
 

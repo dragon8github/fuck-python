@@ -137,5 +137,15 @@ print(People.__dict__)
 # '__weakref__': <attribute '__weakref__' of 'People' objects>, '__doc__': None}
 ```
 
+---
 
+### 字典类型，类似javascript中的对象
+
+```py
+me = {"name":"Lee"}
+user = dict(age=19, sex='nan')
+print(me, user)
+```
+
+这些方式都是定义字段的方式，非常简单和常用
 

@@ -106,7 +106,7 @@ class Test:
     pass
 
 print(__doc__) # 我是全局的注释
-print(Test.__doc__)# 我是全局的注释
+print(Test.__doc__)# 我是Test的注释
 ```
 
 

@@ -21,7 +21,7 @@ def show():
 print('versions is 1.0')
 ```
 
-main.py
+回到我们的主模块main.py
 
 ```py
 import functions  # versions is 1.0
@@ -36,4 +36,16 @@ print(functions.name) # Lee
 其次是可以使用模块中的全局变量、方法。
 
 ---
+
+### import from
+
+```py
+from functions import show,name # versions is 1.0
+
+show() # Lee
+
+print(name) # Lee
+```
+
+
 

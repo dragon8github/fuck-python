@@ -109,5 +109,15 @@ print(__doc__) # 我是全局的注释
 print(Test.__doc__)# 我是Test的注释
 ```
 
+获取函数名，通常可以判断当前函数是否为主函数（main）
 
+```py
+class Test:
+    pass
+
+print(__name__)  # __main__
+print(Test.__name__) # Test
+```
+
+默认当前文件所在的模块，默认就是主函数main。
 

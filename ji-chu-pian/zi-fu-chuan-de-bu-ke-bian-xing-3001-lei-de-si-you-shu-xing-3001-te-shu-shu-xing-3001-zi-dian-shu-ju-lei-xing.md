@@ -64,3 +64,31 @@ girl.info() # Mp []
 
 主要看场景，如果一个变量希望被共享，那么应该被放置在外部。如果不是被共享，那么应该放置在构造函数中。
 
+---
+
+### 类的私有属性
+
+定义私有属性，在类中访问很正常，但在外部是无法正常访问了，除非通过非常特殊的语法。具体看下demo
+
+```py
+class People:
+
+    __sex = '男'
+
+    def __init__(self, inputName):
+        self.name = inputName
+        self.age = []
+
+    def info(self):
+        print(self.__sex)
+
+
+boy = People("Lee")
+boy.info() # 男
+# print(boy.__sex) # 报错
+print(boy._People__sex) # 男 
+# 只有通过 类实例._类名__属性名 才可以访问
+```
+
+
+

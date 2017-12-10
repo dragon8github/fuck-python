@@ -4,7 +4,7 @@
 
 ---
 
-### 模块的导入
+## 模块的导入
 
 [https://docs.python.org/3/tutorial/modules.html](https://docs.python.org/3/tutorial/modules.html)
 
@@ -34,8 +34,6 @@ print(functions.name) # Lee
 我们可以看出，Import 模块之后，不仅会执行模块中的内容，如Print。
 
 其次是可以使用模块中的全局变量、方法。
-
----
 
 ### import from 语法的使用
 

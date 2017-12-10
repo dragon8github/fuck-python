@@ -142,9 +142,14 @@ print(People.__dict__)
 ### 字典类型，类似javascript中的对象
 
 ```py
-me = {"name":"Lee"}
+me={"name":"Lee"}
 user = dict(age=19, sex='nan')
-print(me, user)
+print(me, user) # {'name': 'Lee'} {'age': 19, 'sex': 'nan'}
+
+for key in user:
+    print(key, user[key])
+# age 19
+# sex nan
 ```
 
 这些方式都是定义字段的方式，非常简单和常用

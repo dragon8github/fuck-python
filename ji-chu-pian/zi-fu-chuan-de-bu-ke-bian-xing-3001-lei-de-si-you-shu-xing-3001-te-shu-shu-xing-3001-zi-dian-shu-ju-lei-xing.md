@@ -109,7 +109,7 @@ print(__doc__) # 我是全局的注释
 print(Test.__doc__)# 我是Test的注释
 ```
 
-获取函数名，通常可以判断当前函数是否为主函数（main）
+获取函数名，通常可以判断当前函数是否为主函数（main），默认当前文件所在的模块，默认就是主函数main。
 
 ```py
 class Test:
@@ -119,5 +119,20 @@ print(__name__)  # __main__
 print(Test.__name__) # Test
 ```
 
-默认当前文件所在的模块，默认就是主函数main。
+获取类的详情信息
+
+```py
+class People:
+
+    __sex = '男'
+
+    def __init__(self, inputName):
+        self.name = inputName
+        self.age = []
+
+print(People.__dict__)
+# {'__module__': '__main__', '_People__sex': '男', '__init__': <function People.__init__ at 0x000001BFF82DC158>, '__dict__': <attribute '__dict__' of 'People' objects>, '__weakref__': <attribute '__weakref__' of 'People' objects>, '__doc__': None}
+```
+
+
 

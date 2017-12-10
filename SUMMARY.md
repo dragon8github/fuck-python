@@ -7,8 +7,8 @@
 ## 基础篇
 
 * [函数与参数、令人发指的list类型、range序列、map函数、class定义初步](ji-chu-pian/guan-jian-zi-can-shu-3001-ling-ren-fa-zhi-de-list-lei-xing-3001-range-xu-lie-3001-map-han-shu-3001-class-ding-yi-chu-bu.md)
-* [值类型与引用类型、类的私有属性、特殊属性、字典数据类型](ji-chu-pian/zi-fu-chuan-de-bu-ke-bian-xing-3001-lei-de-si-you-shu-xing-3001-te-shu-shu-xing-3001-zi-dian-shu-ju-lei-xing.md)
-* 多版本python共存、模块、包的导入、locals\(\)、globals\(\)、sys.path的作用
+* [值类型与引用类型、类的私有属性/方法、魔力函数、字典数据类型](ji-chu-pian/zi-fu-chuan-de-bu-ke-bian-xing-3001-lei-de-si-you-shu-xing-3001-te-shu-shu-xing-3001-zi-dian-shu-ju-lei-xing.md)
+* [多版本python共存、模块、包的导入、locals\(\)、globals\(\)、sys.path的作用](ji-chu-pian/duo-ban-ben-python-gong-cun-3001-mo-kuai-3001-bao-de-dao-ru-3001-locals-globals-sys-path-de-zuo-yong.md)
 * pip的使用、安装虚拟环境\(venv\)、试玩爬虫相关库\(beautiful soup\)
 * 读取文件、OS模块、is和==、异常初步、with as 语法处理异常
 

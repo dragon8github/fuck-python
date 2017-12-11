@@ -44,9 +44,11 @@ $ python -m venv Lee
 
 ![](/assets/124245import.png)
 
-接下来我们进入Scripts 文件夹中，找到 activate.bat 文件夹并且执行它
+接下来我们进入 Scripts 文件夹中，找到 activate.bat 文件夹并且执行它
 
 ```
+$ cls
+
 $ cd C:\python\venv\Lee\Scripts
 
 $ activate.bat

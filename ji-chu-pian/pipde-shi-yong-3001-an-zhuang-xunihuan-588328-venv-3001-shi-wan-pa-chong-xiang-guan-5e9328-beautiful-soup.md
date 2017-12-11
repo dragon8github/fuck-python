@@ -82,7 +82,7 @@ $ python -m pip install beautifulsoup4
 
 ### 使用BeautifulSoup
 
-https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/\#id10
+[https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/\#id10](https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/#id10)
 
 ```py
 from bs4 import BeautifulSoup
@@ -119,5 +119,9 @@ print(soup.html.head)
 
 ### pychar 配置 虚拟环境下的python.exe来执行和解析
 
-![](/assets/15123123123import.png)
+![](/assets/15123123123import.png)这样就可以解析了，如果不配置（使用默认的python解析）会报错说找不到bs4模块
+
+![](/assets/3524625626import.png)
+
+
 

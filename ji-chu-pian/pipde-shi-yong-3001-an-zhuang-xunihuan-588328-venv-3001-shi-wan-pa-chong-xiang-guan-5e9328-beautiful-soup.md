@@ -76,3 +76,5 @@ $ python -m pip install beautifulsoup4
 
 ![](/assets/13123123123import.png)
 
+（ps：这时候我们在python根目录下的Lib是不存在bs4的，说明是完全隔离的一个环境）
+

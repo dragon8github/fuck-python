@@ -35,14 +35,18 @@ print(os.path.dirname(os.path.dirname(__file__)))
 > [https://docs.python.org/3/library/exceptions.html?highlight=exception](https://docs.python.org/3/library/exceptions.html?highlight=exception)
 
 ```py
+import os
+
 f = None
 try:
     # 因为这个文件不存在
-    f = open(os.path.dirname(__file__) + "/files/test2.txt")
+    f = open(os.path.dirname(__file__) + "/files/test.txt")
+    print(f.read())
 except:
     print("找不到这个文件")
 finally:
     if f is not None:
+        print('close')
         f.close()
 ```
 

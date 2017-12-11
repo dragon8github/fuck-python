@@ -77,5 +77,40 @@ print(a==b)   # True
 print(a is b) # False
 ```
 
+---
+
+## with as 语法与类的生命周期
+
+```py
+import os
+
+class fileReader:
+    def __init__(self, _path):
+        print('init')
+        self.path = _path
+
+    def __enter__(self):
+        print('enter')
+        return self
+
+    def show(self):
+        self.file = open(self.path)
+        print(self.file.read())
+
+    def __exit__(self, exe_type, exe_value, traceback):
+        print("exit")
+        # 如果没有异常
+        if exe_type is None:
+        # if hasattr(self, 'file'):
+            self.file.close()
+        # 通过True、False可以选择是否抛出异常
+        # return False
+        return True
+            
+
+with fileReader("./files/test.txt") as fr:
+    fr.show()
+```
+
 
 

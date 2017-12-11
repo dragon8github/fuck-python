@@ -10,11 +10,11 @@
 * [值类型与引用类型、类的私有属性/方法、魔力函数、字典数据类型](ji-chu-pian/zi-fu-chuan-de-bu-ke-bian-xing-3001-lei-de-si-you-shu-xing-3001-te-shu-shu-xing-3001-zi-dian-shu-ju-lei-xing.md)
 * [多版本python共存策略、模块/包的导入导出](ji-chu-pian/duo-ban-ben-python-gong-cun-3001-mo-kuai-3001-bao-de-dao-ru-3001-locals-globals-sys-path-de-zuo-yong.md)
 * [pip的使用、安装虚拟环境\(venv\)、试玩爬虫相关库\(beautiful soup\)](ji-chu-pian/pipde-shi-yong-3001-an-zhuang-xunihuan-588328-venv-3001-shi-wan-pa-chong-xiang-guan-5e9328-beautiful-soup.md)
-* [读取文件、OS模块、is和==、异常捕获、with as 语法处理异常](ji-chu-pian/du-qu-wen-jian-3001-os-mo-kuai-3001-is-548c3d3d-3001-yi-chang-chu-bu-3001-with-as-yu-fa-chu-li-yi-chang.md)
+* [读取文件、OS模块、is和==、异常捕获、with as 语法、类的生命周期](ji-chu-pian/du-qu-wen-jian-3001-os-mo-kuai-3001-is-548c3d3d-3001-yi-chang-chu-bu-3001-with-as-yu-fa-chu-li-yi-chang.md)
 
 ## 爬虫篇
 
-* 初识urllib、读取基金网站html、字节、字符、二进制、保存html文件
+* [初识urllib、读取基金网站html、字节、字符、二进制、保存html文件](pa-chong-pian/chushi-urllib-3001-du-qu-ji-jin-wang-zhan-html-3001-zi-jie-3001-zi-fu-3001-er-jin-zhi-3001-bao-cun-html-wen-jian.md)
 * 使用BeautifulSoup抓取基金代码、累计净值、元组
 * 入手pymysql、增删改查、日期格式化、基金数据抓取并入库 
 * 入手ORM框架sqlalchemy和基本使用引导

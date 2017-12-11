@@ -32,5 +32,25 @@ $ ./easy_install pip
 
 ---
 
+## 安装虚拟环境\(venv\)
 
+我们先随便找一个地方创建一个文件夹，为了规范我在python根目录下新建venv文件夹，路径为C:\python\venv
+
+接下来我们新建一个名为Lee的虚拟环境
+
+```
+$ python -m venv Lee
+```
+
+![](/assets/124245import.png)
+
+接下来我们进入Scripts 文件夹中，找到 activate.bat 文件夹并且执行它
+
+```
+$ cd C:\python\venv\Lee\Scripts
+
+$ activate.bat
+```
+
+![](/assets/1435324import.png)
 

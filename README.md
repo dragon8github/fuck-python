@@ -26,15 +26,17 @@
 
 > [https://docs.python.org/3/library/functions.html?highlight=built](https://docs.python.org/3/library/functions.html?highlight=built)
 
-
-
 ### 内置类型库 Built-in Constants
 
 > [https://docs.python.org/3/library/constants.html](https://docs.python.org/3/library/constants.html)
 
-
-
 ### 内置模块库improved-modules
 
 [https://docs.python.org/3/whatsnew/3.6.html\#improved-modules](https://docs.python.org/3/whatsnew/3.6.html#improved-modules)
+
+---
+
+在cmd中使用python进入母体，但按下Ctrl + C 无法退出。需要手动使用exit\(\) 即可
+
+![](/assets/135667import.png)
 

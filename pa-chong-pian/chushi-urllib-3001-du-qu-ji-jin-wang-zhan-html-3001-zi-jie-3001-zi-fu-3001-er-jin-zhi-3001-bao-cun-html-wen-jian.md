@@ -16,7 +16,7 @@ print(html)
 
 进而我们要打开如下文档
 
-> https://docs.python.org/3/library/http.client.html\#httpresponse-objects
+> [https://docs.python.org/3/library/http.client.html\#httpresponse-objects](https://docs.python.org/3/library/http.client.html#httpresponse-objects)
 
 ---
 
@@ -27,6 +27,8 @@ print(html)
 2、每8位是一个字节\(Byte\)可代表一个字元\(A~Z\)、数字\(0~9\)、或符号\(,.?!%&+-\*/\)
 
 3、网络传输单位、包括我们存在电脑中的文件等等都是以字节的形式存储。然而对于一些纯文本的内容，可以把字节转化为字符让我们肉眼能识别出来。
+
+我们先创建一个htnls的文件，并且新建一个1.txt文件。
 
 ```py
 from urllib import request

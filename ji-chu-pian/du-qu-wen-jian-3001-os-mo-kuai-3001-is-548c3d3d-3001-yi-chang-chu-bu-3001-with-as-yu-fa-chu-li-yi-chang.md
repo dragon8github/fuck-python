@@ -30,7 +30,7 @@ print(os.path.dirname(os.path.dirname(__file__)))
 
 ![](/assets/12435345345345import.png)
 
-### 捕捉异常、None、is 、not
+### 捕捉异常、None、is语法 、not取反
 
 > [https://docs.python.org/3/library/exceptions.html?highlight=exception](https://docs.python.org/3/library/exceptions.html?highlight=exception)
 
@@ -52,8 +52,6 @@ finally:
 
 ---
 
-# == 和 is 以及 id\(\)
-
 ### id\(\)
 
 如果是普通数据类型（不可变数据类型、值类型）如String、Number、bool。他们的内存地址是不变的。  
@@ -71,6 +69,13 @@ print(id(c), id(d)) # 5487032 5485232
 ```
 
 ### == 和 is的区别
+
+```py
+a = [1,2,3]
+b = [1,2,3]
+print(a==b)   # True
+print(a is b) # False
+```
 
 
 

@@ -62,7 +62,7 @@ $ activate.bat
 
 ### BeautifulSoup：使用pip安装著名的爬虫库
 
-> https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/
+> [https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/](https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/)
 
 先进入虚拟环境，然后使用如下命令安装
 
@@ -71,4 +71,8 @@ $ python -m pip install beautifulsoup4
 ```
 
 ![](/assets/12341234234import.png)
+
+安装完成后，我们可以在Lee虚拟环境中找到Lib\site-packages\bs4，就是我们刚刚安装的BeautifulSoup4了
+
+![](/assets/13123123123import.png)
 

@@ -56,3 +56,19 @@ $ activate.bat
 
 ![](/assets/1435324import.png)
 
+这样我们就进入了虚拟环境
+
+---
+
+### BeautifulSoup：使用pip安装著名的爬虫库
+
+> https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/
+
+先进入虚拟环境，然后使用如下命令安装
+
+```
+$ python -m pip install beautifulsoup4
+```
+
+![](/assets/12341234234import.png)
+

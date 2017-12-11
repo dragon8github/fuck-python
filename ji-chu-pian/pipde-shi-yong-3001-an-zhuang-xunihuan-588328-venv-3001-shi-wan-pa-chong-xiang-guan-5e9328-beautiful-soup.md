@@ -62,6 +62,8 @@ $ activate.bat
 
 ### BeautifulSoup：使用pip安装著名的爬虫库
 
+> BeautifulSoup 官方文档
+>
 > [https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/](https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/)
 
 先进入虚拟环境，然后使用如下命令安装
@@ -122,6 +124,4 @@ print(soup.html.head)
 ![](/assets/15123123123import.png)这样就可以解析了，如果不配置（使用默认的python解析）会报错说找不到bs4模块
 
 ![](/assets/3524625626import.png)
-
-
 

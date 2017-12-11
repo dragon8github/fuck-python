@@ -30,7 +30,7 @@ print(os.path.dirname(os.path.dirname(__file__)))
 
 ![](/assets/12435345345345import.png)
 
-### 捕捉异常
+### 捕捉异常、None、is 、not
 
 > [https://docs.python.org/3/library/exceptions.html?highlight=exception](https://docs.python.org/3/library/exceptions.html?highlight=exception)
 
@@ -44,7 +44,6 @@ except:
 finally:
     if f is not None:
         f.close()
-
 ```
 
 

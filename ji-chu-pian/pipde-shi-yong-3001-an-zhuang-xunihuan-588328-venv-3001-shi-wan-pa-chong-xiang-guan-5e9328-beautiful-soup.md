@@ -46,7 +46,7 @@ $ python -m venv Lee
 
 接下来我们进入 Scripts 文件夹中，找到 activate.bat 文件夹并且执行它
 
-```
+```bash
 $ cls
 
 $ cd C:\python\venv\Lee\Scripts

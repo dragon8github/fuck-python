@@ -78,3 +78,46 @@ $ python -m pip install beautifulsoup4
 
 （ps：这时候我们在python根目录下的Lib是不存在bs4的，说明是完全隔离的一个环境）
 
+---
+
+### 使用BeautifulSoup
+
+https://www.crummy.com/software/BeautifulSoup/bs4/doc.zh/\#id10
+
+```py
+from bs4 import BeautifulSoup
+
+soup = BeautifulSoup("""
+    <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <title>Document</title>
+        </head>
+        <body>
+            this is my html page
+        </body>
+    </html>
+""", 'html.parser')
+
+print(soup.html.head)
+```
+
+由于我们使用的是虚拟环境中的python.exe，所以运行的时候需要指定该环境下的python.exe
+
+> $ C:/python/venv/Lee/Scripts/python.exe test.py
+>
+> &lt;head&gt;
+>
+> &lt;meta charset="utf-8"/&gt;
+>
+> &lt;title&gt;Document&lt;/title&gt;
+>
+> &lt;/head&gt;
+
+---
+
+### pychar 配置 虚拟环境下的python.exe来执行和解析
+
+![](/assets/15123123123import.png)
+

@@ -107,7 +107,9 @@ print(soup.html.head)
 
 由于我们使用的是虚拟环境中的python.exe，所以运行的时候需要指定该环境下的python.exe
 
-> $ C:/python/venv/Lee/Scripts/python.exe test.py
+（ps：也可以先cd到虚拟目录下，然后执行python，因为会先从当前目录下查找，然后再去系统环境下查找）
+
+> $ :/python/venv/Lee/Scripts/python.exe test.py
 >
 > &lt;head&gt;
 >

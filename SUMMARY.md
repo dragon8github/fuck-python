@@ -15,8 +15,8 @@
 ## 爬虫篇
 
 * [初识urllib、读取基金网站html、字节、字符、二进制、保存html文件](pa-chong-pian/chushi-urllib-3001-du-qu-ji-jin-wang-zhan-html-3001-zi-jie-3001-zi-fu-3001-er-jin-zhi-3001-bao-cun-html-wen-jian.md)
-* [使用BeautifulSoup抓取基金代码、累计净值、元组](pa-chong-pian/shi-yong-beautifulsoup-zhua-qu-ji-jin-dai-ma-3001-lei-ji-jing-zhi-3001-yuan-zu.md)
-* 入手pymysql、增删改查、日期格式化、基金数据抓取并入库 
+* [使用BeautifulSoup抓取基金代码、元组的使用](pa-chong-pian/shi-yong-beautifulsoup-zhua-qu-ji-jin-dai-ma-3001-lei-ji-jing-zhi-3001-yuan-zu.md)
+* [入手pymysql、增删改查、日期格式化、基金数据抓取并入库 ](pa-chong-pian/ru-shou-pymysql-3001-zeng-shan-gai-cha-3001-ri-qi-ge-shi-hua-3001-ji-jin-shu-ju-zhua-qu-bing-ru-ku.md)
 * 入手ORM框架sqlalchemy和基本使用引导
 * 自动生成ORM实体类、抓取基金网站JS形式的数据、python执行JS并解析
 * 入手爬虫利器:phantomjs+selenium、自动填充文本框、自动点按钮

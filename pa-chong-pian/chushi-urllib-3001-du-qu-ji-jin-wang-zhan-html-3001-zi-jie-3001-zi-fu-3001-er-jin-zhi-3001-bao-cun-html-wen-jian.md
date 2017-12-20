@@ -34,6 +34,8 @@ from urllib import request
 
 response = request.urlopen("http://fund.eastmoney.com/fund.html")
 html = response.read()
+
+# 请先手动新建./htmls/1.txt
 with open("./htmls/1.txt",'wb') as f:
     # 先进行gb2312解码，但gb18030更加全面和强大。
     # 但解码之后，存储在文本中，还需要转化成文本通用编码格式，也就是utf8.不要问什么。

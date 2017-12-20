@@ -54,9 +54,9 @@ finally:
 
 ### id\(\)
 
-如果是普通数据类型（不可变数据类型、值类型）如String、Number、bool。他们的内存地址是不变的。  
-但如果是列表（数组，可变类型，引用类型），他们的内存地址是动态的。  
-举个例子
+* 如果是普通数据类型（不可变数据类型、值类型）如String、Number、bool。他们的内存地址是不变的。
+
+* 如果是列表（数组，可变类型，引用类型），他们的内存地址是动态的。
 
 ```py
 a = 1
@@ -73,7 +73,7 @@ print(id(c), id(d)) # 5487032 5485232
 ```py
 a = [1,2,3]
 b = [1,2,3]
-print(a==b)   # True
+print(a == b)   # True
 print(a is b) # False
 ```
 
@@ -106,7 +106,7 @@ class fileReader:
         # 通过True、False可以选择是否抛出异常
         # return False
         return True
-            
+
 
 with fileReader("./files/test.txt") as fr:
     fr.show()

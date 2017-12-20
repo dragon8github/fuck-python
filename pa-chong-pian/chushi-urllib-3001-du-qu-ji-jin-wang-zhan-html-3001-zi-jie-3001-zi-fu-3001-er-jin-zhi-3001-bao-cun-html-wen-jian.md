@@ -26,20 +26,19 @@ print(html)
 
 3、网络传输单位、包括我们存在电脑中的文件等等，都是以字节的形式存储。然而对于一些纯文本的内容，可以把字节转化为字符让我们肉眼能识别出来。
 
-我们先创建一个htnls的文件，并且新建一个1.txt文件。
+**我们先创建一个htnls的文件，并且新建一个1.txt文件。**
 
 ```py
 # -*- coding: utf-8 -*-
 from urllib import request
 
 response = request.urlopen("http://fund.eastmoney.com/fund.html")
-html = response.read()
+# 由于页面是gb2312编码，所以需要先进行gb2312解码，但18030更加全面和强大。
+html = response.read().decode('gb18030')
 
-# 请先手动新建./htmls/1.txt
 with open("./htmls/1.txt",'wb') as f:
-    # 先进行gb2312解码，但gb18030更加全面和强大。
-    # 但解码之后，存储在文本中，还需要转化成文本通用编码格式，也就是utf8.不要问什么。
-    f.write(html.decode('gb18030').encode('utf8'))
+    # 存储在文本中，还需要转化成文本通用编码格式，也就是utf8.不要问什么。
+    f.write(html.encode('utf8'))
     f.close()
 ```
 

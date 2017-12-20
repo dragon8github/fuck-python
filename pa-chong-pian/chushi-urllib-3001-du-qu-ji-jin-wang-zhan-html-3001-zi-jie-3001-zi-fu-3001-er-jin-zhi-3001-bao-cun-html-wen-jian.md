@@ -7,8 +7,8 @@
 ```py
 from urllib import request
 
-response =request.urlopen("http://fund.eastmoney.com/fund.html")
-html=response.read()
+response = request.urlopen("http://fund.eastmoney.com/fund.html")
+html = response.read()
 print(html)
 ```
 
@@ -33,7 +33,7 @@ print(html)
 ```py
 from urllib import request
 
-response =request.urlopen("http://fund.eastmoney.com/fund.html")
+response = request.urlopen("http://fund.eastmoney.com/fund.html")
 html = response.read()
 with open("./htmls/1.txt",'wb') as f:
     f.write(html.decode('gb2312').encode('utf8'))

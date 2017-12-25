@@ -57,7 +57,8 @@ import pymysql
 from pymysql.cursors import Cursor
 from Common.config import dbconfig
 
-result     =  [{'fcode': '167301', 'fname': '方正富邦保险主题指数分级', 'NAV': '1.3760', 'ACCNAV': '1.4410', 'updatetime': '2017-12-25 00:00:00'}]
+result     =  [{'fcode': '167301', 'fname': '方正富邦保险主题指数分级', 'NAV': '1.3760', 'ACCNAV': '1.4410', 'updatetime': '2017-12-25 00:00:00'},
+               {'fcode': '003886', 'fname': '汇安丰利混合A估值图基金吧', 'NAV': '1.3760', 'ACCNAV': '1.4410', 'updatetime': '2017-12-25 00:00:00'}]
 connection = pymysql.connect(**dbconfig)
 cursor     = Cursor(connection)
 
@@ -66,12 +67,11 @@ cursor.executemany('''
     VALUES(%(fcode)s, %(fname)s, %(NAV)s, %(ACCNAV)s, %(updatetime)s)
     ON DUPLICATE KEY UPDATE `updatetime` = %(updatetime)s, `NAV` = %(NAV)s, `ACCNAV` = %(ACCNAV)s
 ''', result)
-
 connection.commit()
 connection.close()
 ```
 
-### ![](/assets/15135234import.png)
+### ![](/assets/24474686767import.png)
 
 ### 坑爹记录
 

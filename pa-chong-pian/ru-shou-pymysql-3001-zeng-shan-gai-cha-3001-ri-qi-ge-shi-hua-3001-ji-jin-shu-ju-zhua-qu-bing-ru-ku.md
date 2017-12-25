@@ -50,11 +50,11 @@ dbconfig = {
 }
 ```
 
-index.php
+index.py
 
 ```py
 import pymysql
-from pymysql.cursors import Cursor, SSCursor
+from pymysql.cursors import Cursor
 from Common.config import dbconfig
 
 result     =  [{'fcode': '167301', 'fname': '方正富邦保险主题指数分级', 'NAV': '1.3760', 'ACCNAV': '1.4410', 'updatetime': '2017-12-25 00:00:00'}]
@@ -66,6 +66,7 @@ cursor.executemany('''
     VALUES(%(fcode)s, %(fname)s, %(NAV)s, %(ACCNAV)s, %(updatetime)s)
     ON DUPLICATE KEY UPDATE `updatetime` = %(updatetime)s, `NAV` = %(NAV)s, `ACCNAV` = %(ACCNAV)s
 ''', result)
+
 connection.commit()
 connection.close()
 ```
@@ -77,7 +78,7 @@ connection.close()
 1、插入数据库的时候，请注意UTF-8的问题。也就是数据库和数据表都应该设置为UTF-8
 
 ```py
-alter table <表名> convert to character set utf8 
+alter table <表名> convert to character set utf8
 ```
 
 2、py中的'''sql语句'''不要乱来。

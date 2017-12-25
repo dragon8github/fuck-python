@@ -119,7 +119,6 @@ class Me:
 me = Me('Lee')
 me.show() # Lee
 Me.version() # 1.0
-
 ```
 
 

@@ -42,7 +42,7 @@ import pymysql
 from pymysql.cursors import Cursor, SSCursor
 from Common.config import dbconfig
 
-result     =  [{'fcode': '167301', 'fname': u'方正富邦保险主题指数分级', 'NAV': '1.3760', 'ACCNAV': '1.4410', 'updatetime': '2017-12-25 00:00:00'}]
+result     =  [{'fcode': '167301', 'fname': '方正富邦保险主题指数分级', 'NAV': '1.3760', 'ACCNAV': '1.4410', 'updatetime': '2017-12-25 00:00:00'}]
 connection = pymysql.connect(**dbconfig)
 cursor     = Cursor(connection)
 

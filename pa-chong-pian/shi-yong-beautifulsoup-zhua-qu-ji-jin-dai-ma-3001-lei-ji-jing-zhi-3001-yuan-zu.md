@@ -1,8 +1,10 @@
 ### 元组
 
+![](/assets/aszxzxczxczxczxcimport.png)
+
 和List很类似，且是不可变的。一旦你设定初始值后，不能修改
 
-https://docs.python.org/3/library/stdtypes.html?highlight=tuple\#tuple
+[https://docs.python.org/3/library/stdtypes.html?highlight=tuple\#tuple](https://docs.python.org/3/library/stdtypes.html?highlight=tuple#tuple)
 
 ```py
 # 定义一个空元组

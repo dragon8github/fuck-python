@@ -1,5 +1,7 @@
 ### 文件操作
 
+![](/assets/sadasdzxzxcximport.png)
+
 > [https://docs.python.org/3/tutorial/inputoutput.html\#reading-and-writing-files](https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files)
 
 ```py

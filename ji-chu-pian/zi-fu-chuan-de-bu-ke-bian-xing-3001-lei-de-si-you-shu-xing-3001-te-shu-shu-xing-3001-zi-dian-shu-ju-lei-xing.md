@@ -1,5 +1,7 @@
 ### 值类型和引用类型
 
+![](/assets/xvbgjgfhjfhimport.png)
+
 String 类型在Python中被称为不可变类型，实际上就是值类型的意思
 
 ```py

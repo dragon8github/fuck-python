@@ -1,5 +1,7 @@
 # 函数的定义和参数
 
+![](/assets/asdasdasdasdasdimport.png)
+
 [https://docs.python.org/3.7/tutorial/controlflow.html\#defining-functions](https://docs.python.org/3.7/tutorial/controlflow.html#defining-functions)
 
 [https://docs.python.org/3.7/tutorial/controlflow.html\#more-on-defining-functions](https://docs.python.org/3.7/tutorial/controlflow.html#more-on-defining-functions)

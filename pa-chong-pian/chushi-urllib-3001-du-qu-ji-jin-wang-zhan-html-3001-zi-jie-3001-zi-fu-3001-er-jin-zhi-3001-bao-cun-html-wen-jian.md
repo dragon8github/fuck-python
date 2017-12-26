@@ -1,5 +1,7 @@
 ### urllib：内置的网络编程模块
 
+![](/assets/asdasdasdqweqweqweimport.png)
+
 > [https://docs.python.org/3/library/urllib.html](https://docs.python.org/3/library/urllib.html)
 >
 > [https://docs.python.org/3/library/urllib.request.html\#module-urllib.request](https://docs.python.org/3/library/urllib.request.html#module-urllib.request)

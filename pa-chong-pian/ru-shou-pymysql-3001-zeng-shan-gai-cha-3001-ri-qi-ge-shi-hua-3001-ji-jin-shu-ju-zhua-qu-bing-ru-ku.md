@@ -1,5 +1,7 @@
 ### 安装pymysql
 
+![](/assets/asdqweqweqwedffsimport.png)
+
 [https://github.com/PyMySQL/PyMySQL](https://github.com/PyMySQL/PyMySQL)
 
 这里我是使用虚拟环境来安装的，随意即可

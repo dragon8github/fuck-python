@@ -6,6 +6,8 @@
 
 ## 模块的导入
 
+![](/assets/asdasdimport.png)
+
 [https://docs.python.org/3/tutorial/modules.html](https://docs.python.org/3/tutorial/modules.html)
 
 在python中任何一个文件都可以看做一个模块。
@@ -59,7 +61,7 @@ print(name) # Lee
 
 ```py
 from Common.functions import show  # versions is 1.0
- 
+
 show() # Lee
 ```
 
@@ -67,7 +69,7 @@ show() # Lee
 
 ```py
 import Common.functions # versions is 1.0
- 
+
 Common.functions.show() # Lee
 ```
 

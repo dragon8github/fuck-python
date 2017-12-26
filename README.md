@@ -1,5 +1,7 @@
 #### 安装pycharm
 
+![](/assets/asdasdasdimport.png)
+
 > [http://www.jetbrains.com/pycharm/?fromMenu](http://www.jetbrains.com/pycharm/?fromMenu)
 
 | 组合键 | 功能 |

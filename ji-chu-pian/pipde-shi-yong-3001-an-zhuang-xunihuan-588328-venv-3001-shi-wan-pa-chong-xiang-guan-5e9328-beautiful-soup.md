@@ -6,6 +6,8 @@
 
 ### pip的安装和使用
 
+![](/assets/asdaqweqweqweimport.png)
+
 先检查你的python是否自带了pip
 
 ```bash

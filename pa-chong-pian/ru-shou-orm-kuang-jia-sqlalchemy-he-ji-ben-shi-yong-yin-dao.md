@@ -87,13 +87,12 @@ class News(Base):
 1.3、index.py
 
 ```py
-from sqlalchemy import create_engine
+from sqlalchemy import create_engine, desc, text
 from mappers.info import News
 from sqlalchemy.orm import sessionmaker
 
 # 添加echo=True参数可以打印出具体的sql语句。非常的友好和方便。
 # engine = create_engine('mysql+pymysql://root:root@localhost/test?charset=utf8', echo=True)
-
 engine = create_engine('mysql+pymysql://root:root@localhost/test?charset=utf8')
 Session = sessionmaker(engine)
 mysession = Session()
@@ -107,25 +106,49 @@ result = mysession.query(News).first()
 print(result.__dict__)
 print(result.news_title)
 
-# 返回单个对象
+# 过滤并且返回单个对象
 result = mysession.query(News).filter_by(news_id=2).first()
 print(result)
 
-# 返回列表
+# 过滤并且返回列表
 result = mysession.query(News).filter_by(news_id=2).all()
 print(result)
 
+# 过滤对象，注意使用的是==，效果同上
+result = mysession.query(News).filter(News.news_id == 2).all()
+print(result)
+
+# limit + offset
+result = mysession.query(News).filter(News.news_id > 2).limit(2).offset(0).all()
+print(result)
+
+# 排序orderby（正序）
+result = mysession.query(News).filter(News.news_id > 2).order_by(News.news_id).limit(2).offset(0).all()
+print(result)
+
+# 排序orderby（倒序）
+result = mysession.query(News).filter(News.news_id > 2).order_by(desc(News.news_id)).limit(2).offset(0).all()
+print(result)
+
+# 自定义过滤，其中:nid 和 :nclass 是占位符
+result = mysession.query(News).filter(text("news_id > :nid and news_class= :nclass")).params(nid=2,nclass='web开发').all()
+print(result)
 ```
 
 ### Result
 
 ```js
 C:\python\venv\Lee\Scripts\python.exe C:/Users/lizhaohong/PycharmProjects/mypro/test.py
-{'news_id': 2, 'news_abstract': 'Java新闻摘要', 'news_updatetime': datetime.datetime(2017, 5, 29, 12, 38, 2), '_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x03565030>, 'news_clicknum': 11, 'news_title': 'Java开发新闻内容'}
-{'news_id': 2, 'news_abstract': 'Java新闻摘要', 'news_updatetime': datetime.datetime(2017, 5, 29, 12, 38, 2), '_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x03565030>, 'news_clicknum': 11, 'news_title': 'Java开发新闻内容'}
+{'news_title': 'Java开发新闻内容', '_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x03555470>, 'news_updatetime': datetime.datetime(2017, 5, 29, 12, 38, 2), 'news_abstract': 'Java新闻摘要', 'news_clicknum': 11, 'news_id': 2}
+{'news_title': 'Java开发新闻内容', '_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x03555470>, 'news_updatetime': datetime.datetime(2017, 5, 29, 12, 38, 2), 'news_abstract': 'Java新闻摘要', 'news_clicknum': 11, 'news_id': 2}
 Java开发新闻内容
-<mappers.info.News object at 0x03565490>
-[<mappers.info.News object at 0x03565490>]
+<mappers.info.News object at 0x03555490>
+[<mappers.info.News object at 0x03555490>]
+[<mappers.info.News object at 0x03555490>]
+[<mappers.info.News object at 0x03555890>, <mappers.info.News object at 0x035558F0>]
+[<mappers.info.News object at 0x03555890>, <mappers.info.News object at 0x035558F0>]
+[<mappers.info.News object at 0x03555BF0>, <mappers.info.News object at 0x035558F0>]
+[<mappers.info.News object at 0x03555D30>, <mappers.info.News object at 0x035558F0>]
 
 Process finished with exit code 0
 ```

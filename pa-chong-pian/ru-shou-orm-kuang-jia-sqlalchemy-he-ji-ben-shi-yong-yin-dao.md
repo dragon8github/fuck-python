@@ -133,22 +133,36 @@ print(result)
 # 自定义过滤，其中:nid 和 :nclass 是占位符
 result = mysession.query(News).filter(text("news_id > :nid and news_class= :nclass")).params(nid=2,nclass='web开发').all()
 print(result)
+
+# 根据主键id获取数据。但需要orm中设置主键才行。也就是primary_key=True
+result=mysession.query(News).get(2)
+print(result)
+
+# 新增
+news = News(news_title='测试新闻')
+mysession.add(news)
+mysession.commit()
+
+# 修改
+mysession.query(News).filter(News.news_id==2).update({"news_title":"测试修改标题"})
+mysession.commit()
 ```
 
 ### Result
 
 ```js
 C:\python\venv\Lee\Scripts\python.exe C:/Users/lizhaohong/PycharmProjects/mypro/test.py
-{'news_title': 'Java开发新闻内容', '_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x03555470>, 'news_updatetime': datetime.datetime(2017, 5, 29, 12, 38, 2), 'news_abstract': 'Java新闻摘要', 'news_clicknum': 11, 'news_id': 2}
-{'news_title': 'Java开发新闻内容', '_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x03555470>, 'news_updatetime': datetime.datetime(2017, 5, 29, 12, 38, 2), 'news_abstract': 'Java新闻摘要', 'news_clicknum': 11, 'news_id': 2}
+{'news_title': 'Java开发新闻内容', 'news_id': 2, '_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x03634470>, 'news_clicknum': 11, 'news_updatetime': datetime.datetime(2017, 5, 29, 12, 38, 2), 'news_abstract': 'Java新闻摘要'}
+{'news_title': 'Java开发新闻内容', 'news_id': 2, '_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x03634470>, 'news_clicknum': 11, 'news_updatetime': datetime.datetime(2017, 5, 29, 12, 38, 2), 'news_abstract': 'Java新闻摘要'}
 Java开发新闻内容
-<mappers.info.News object at 0x03555490>
-[<mappers.info.News object at 0x03555490>]
-[<mappers.info.News object at 0x03555490>]
-[<mappers.info.News object at 0x03555890>, <mappers.info.News object at 0x035558F0>]
-[<mappers.info.News object at 0x03555890>, <mappers.info.News object at 0x035558F0>]
-[<mappers.info.News object at 0x03555BF0>, <mappers.info.News object at 0x035558F0>]
-[<mappers.info.News object at 0x03555D30>, <mappers.info.News object at 0x035558F0>]
+<mappers.info.News object at 0x03634490>
+[<mappers.info.News object at 0x03634490>]
+[<mappers.info.News object at 0x03634490>]
+[<mappers.info.News object at 0x03634870>, <mappers.info.News object at 0x036348D0>]
+[<mappers.info.News object at 0x03634870>, <mappers.info.News object at 0x036348D0>]
+[<mappers.info.News object at 0x03634BD0>, <mappers.info.News object at 0x036348D0>]
+[<mappers.info.News object at 0x03634D10>, <mappers.info.News object at 0x036348D0>]
+<mappers.info.News object at 0x03634E30>
 
 Process finished with exit code 0
 ```

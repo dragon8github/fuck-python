@@ -40,7 +40,6 @@ print(res)
 1.1、新建 jt\_news 数据表
 
 ```php
-
 SET FOREIGN_KEY_CHECKS=0;
 
 -- ----------------------------
@@ -64,12 +63,43 @@ INSERT INTO `jt_news` VALUES ('2', 'Java开发新闻内容', 'Java新闻摘要',
 INSERT INTO `jt_news` VALUES ('3', 'PHP开发新闻', 'PHP新闻摘要', '2017-05-29 19:52:32', '13', 'web开发');
 INSERT INTO `jt_news` VALUES ('4', 'js前后端分离开发网站项目的案例', 'javascript', '2017-05-28 19:55:59', '43', 'web开发');
 INSERT INTO `jt_news` VALUES ('5', '开发中php和js结合的项目案例', '开发中php和js结合的项目案例摘要', '2017-06-04 13:59:14', '12', '实战开发');
-
 ```
 
 1.2、新建映射文件mappers/info.py
 
-注意mappers是一个包（package），在 PyCharm 中 New -&gt; Python Package 
+注意 mappers 是一个包（Python Package），在 PyCharm 中 New -&gt; Python Package
+
+```py
+from sqlalchemy import Column, Integer, String, TEXT, TIMESTAMP
+from sqlalchemy.ext.declarative import declarative_base
+
+Base = declarative_base()
+
+class News(Base):
+    __tablename__ = "jt_news"
+    news_id = Column(Integer, primary_key=True, autoincrement=True)
+    news_title = Column(String(50), nullable=False)
+    news_abstract = Column(TEXT)
+    news_updatetime = Column(TIMESTAMP)
+    news_clicknum = Column(Integer, default=0)
+
+```
+
+1.3、index.py
+
+```py
+from sqlalchemy import create_engine
+from mappers.info import News
+from sqlalchemy.orm import sessionmaker
+
+engine = create_engine('mysql+pymysql://root:root@localhost/test?charset=utf8')
+Session = sessionmaker(engine)
+mysession=Session()
+
+result = mysession.query(News).all()
+print(result[0].__dict__)
+
+```
 
 
 

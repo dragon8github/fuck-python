@@ -82,7 +82,6 @@ class News(Base):
     news_abstract = Column(TEXT)
     news_updatetime = Column(TIMESTAMP)
     news_clicknum = Column(Integer, default=0)
-
 ```
 
 1.3、index.py
@@ -94,11 +93,19 @@ from sqlalchemy.orm import sessionmaker
 
 engine = create_engine('mysql+pymysql://root:root@localhost/test?charset=utf8')
 Session = sessionmaker(engine)
-mysession=Session()
+mysession = Session()
 
 result = mysession.query(News).all()
 print(result[0].__dict__)
+```
 
+### Result
+
+```
+C:\python\venv\Lee\Scripts\python.exe C:/Users/lizhaohong/PycharmProjects/mypro/test.py
+{'news_id': 2, 'news_abstract': 'Java新闻摘要', 'news_updatetime': datetime.datetime(2017, 5, 29, 12, 38, 2), 'news_title': 'Java开发新闻内容', 'news_clicknum': 11, '_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x037C6450>}
+
+Process finished with exit code 0
 ```
 
 

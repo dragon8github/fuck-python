@@ -4,9 +4,9 @@
 >
 > [http://docs.sqlalchemy.org/en/latest/intro.html\#installation](http://docs.sqlalchemy.org/en/latest/intro.html#installation)
 >
-> http://docs.sqlalchemy.org/en/rel\_1\_1/
+> [http://docs.sqlalchemy.org/en/rel\_1\_1/](http://docs.sqlalchemy.org/en/rel_1_1/)
 >
-> http://www.sqlalchemy.org/library.html\#buildingtheapp
+> [http://www.sqlalchemy.org/library.html\#buildingtheapp](http://www.sqlalchemy.org/library.html#buildingtheapp)
 
 这里我是使用虚拟环境来安装的，随意即可
 
@@ -32,4 +32,44 @@ print(res)
 ```
 
 ![](/assets/IP0$F[$}8H4725DT44%28ZBDP.png)
+
+---
+
+### 创建映射
+
+1.1、新建 jt\_news 数据表
+
+```php
+
+SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for jt_news
+-- ----------------------------
+DROP TABLE IF EXISTS `jt_news`;
+CREATE TABLE `jt_news` (
+  `news_id` int(11) NOT NULL AUTO_INCREMENT,
+  `news_title` varchar(50) DEFAULT NULL,
+  `news_abstract` text,
+  `news_updatetime` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `news_clicknum` int(11) DEFAULT NULL,
+  `news_class` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`news_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of jt_news
+-- ----------------------------
+INSERT INTO `jt_news` VALUES ('2', 'Java开发新闻内容', 'Java新闻摘要', '2017-05-29 12:38:02', '11', '编程语言');
+INSERT INTO `jt_news` VALUES ('3', 'PHP开发新闻', 'PHP新闻摘要', '2017-05-29 19:52:32', '13', 'web开发');
+INSERT INTO `jt_news` VALUES ('4', 'js前后端分离开发网站项目的案例', 'javascript', '2017-05-28 19:55:59', '43', 'web开发');
+INSERT INTO `jt_news` VALUES ('5', '开发中php和js结合的项目案例', '开发中php和js结合的项目案例摘要', '2017-06-04 13:59:14', '12', '实战开发');
+
+```
+
+1.2、新建映射文件mappers/info.py
+
+注意mappers是一个包（package），在 PyCharm 中 New -&gt; Python Package 
+
+
 

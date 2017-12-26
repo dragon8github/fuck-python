@@ -91,19 +91,41 @@ from sqlalchemy import create_engine
 from mappers.info import News
 from sqlalchemy.orm import sessionmaker
 
+# 添加echo=True参数可以打印出具体的sql语句。非常的友好和方便。
+# engine = create_engine('mysql+pymysql://root:root@localhost/test?charset=utf8', echo=True)
+
 engine = create_engine('mysql+pymysql://root:root@localhost/test?charset=utf8')
 Session = sessionmaker(engine)
 mysession = Session()
 
+# 获取所有
 result = mysession.query(News).all()
 print(result[0].__dict__)
+
+# 获取单条
+result = mysession.query(News).first()
+print(result.__dict__)
+print(result.news_title)
+
+# 返回单个对象
+result = mysession.query(News).filter_by(news_id=2).first()
+print(result)
+
+# 返回列表
+result = mysession.query(News).filter_by(news_id=2).all()
+print(result)
+
 ```
 
 ### Result
 
-```
+```js
 C:\python\venv\Lee\Scripts\python.exe C:/Users/lizhaohong/PycharmProjects/mypro/test.py
-{'news_id': 2, 'news_abstract': 'Java新闻摘要', 'news_updatetime': datetime.datetime(2017, 5, 29, 12, 38, 2), 'news_title': 'Java开发新闻内容', 'news_clicknum': 11, '_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x037C6450>}
+{'news_id': 2, 'news_abstract': 'Java新闻摘要', 'news_updatetime': datetime.datetime(2017, 5, 29, 12, 38, 2), '_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x03565030>, 'news_clicknum': 11, 'news_title': 'Java开发新闻内容'}
+{'news_id': 2, 'news_abstract': 'Java新闻摘要', 'news_updatetime': datetime.datetime(2017, 5, 29, 12, 38, 2), '_sa_instance_state': <sqlalchemy.orm.state.InstanceState object at 0x03565030>, 'news_clicknum': 11, 'news_title': 'Java开发新闻内容'}
+Java开发新闻内容
+<mappers.info.News object at 0x03565490>
+[<mappers.info.News object at 0x03565490>]
 
 Process finished with exit code 0
 ```

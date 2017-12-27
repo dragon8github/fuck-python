@@ -14,5 +14,5 @@
 
 ---
 
-
+sqlacodegen --tables jt\_news --outfile ffffffff.py mysql+pymysql://root:root@localhost/test?charset=utf8
 

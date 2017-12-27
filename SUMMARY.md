@@ -18,7 +18,7 @@
 * [使用BeautifulSoup抓取基金代码、元组的使用](pa-chong-pian/shi-yong-beautifulsoup-zhua-qu-ji-jin-dai-ma-3001-lei-ji-jing-zhi-3001-yuan-zu.md)
 * [入手pymysql、增删改查、日期格式化、基金数据抓取并入库 ](pa-chong-pian/ru-shou-pymysql-3001-zeng-shan-gai-cha-3001-ri-qi-ge-shi-hua-3001-ji-jin-shu-ju-zhua-qu-bing-ru-ku.md)
 * [入手ORM框架sqlalchemy和基本使用引导](pa-chong-pian/ru-shou-orm-kuang-jia-sqlalchemy-he-ji-ben-shi-yong-yin-dao.md)
-* 自动生成ORM实体类、抓取基金网站JS形式的数据、python执行JS并解析
+* [自动生成ORM实体类、抓取基金网站JS形式的数据、python执行JS并解析](pa-chong-pian/zi-dong-sheng-cheng-orm-shi-ti-lei-3001-zhua-qu-ji-jin-wang-zhan-js-xing-shi-de-shu-ju-3001-python-zhi-xing-js-bing-jie-xi.md)
 * 入手爬虫利器:phantomjs+selenium、自动填充文本框、自动点按钮
 * 利用phantomjs+selenium抓取基金网站JS生成的页面、python的装饰器、@property
 * 完整抓取基金网站N页JS生成的内容、多进程入门、分布式进程数据共享

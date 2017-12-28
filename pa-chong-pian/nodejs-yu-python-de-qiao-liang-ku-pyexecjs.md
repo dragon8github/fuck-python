@@ -1,5 +1,7 @@
 ### PyExecJS：Node.js 与 Python 的桥梁库
 
+![](/assets/阿速度行走223123123123import.png)
+
 官网地址：[https://pypi.python.org/pypi/PyExecJS/](https://pypi.python.org/pypi/PyExecJS/)
 
 github地址：[https://github.com/doloopwhile/PyExecJS](https://github.com/doloopwhile/PyExecJS)

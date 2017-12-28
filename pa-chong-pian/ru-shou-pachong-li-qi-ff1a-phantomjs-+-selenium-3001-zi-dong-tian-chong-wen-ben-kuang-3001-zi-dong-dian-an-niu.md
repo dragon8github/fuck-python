@@ -25,7 +25,7 @@ $ cd C:\python\venv\Lee\Scripts
 $ python -m pip install selenium
 ```
 
-根据老外的说明，它最终运行需要驱动（geckodriver）。可以使用官方告诉我们的chrome或firefox等，但是这些都不是我们想要的。我们需要的是刚刚我们创建的phantomjs。
+根据老外的说明，它最终运行需要驱动（geckodriver）。可以使用官方告诉我们的chrome或firefox等，但是这些都不是我们想要的。我们需要的是刚刚我们创建的phantomjs。
 
 ```py
 from selenium import webdriver
@@ -37,5 +37,9 @@ searchBox.send_keys("jtthink.com")
 searchBtn.click()
 ```
 
+这里有一个神坑，必须制定PhantomJS.exe的路径才可以正常使用。
+
 ---
+
+
 

@@ -22,8 +22,8 @@
 * [自动生成ORM实体类、自动探测网页编码（GBK/UTF8）](pa-chong-pian/zi-dong-sheng-cheng-orm-shi-ti-lei-3001-zhua-qu-ji-jin-wang-zhan-js-xing-shi-de-shu-ju-3001-python-zhi-xing-js-bing-jie-xi.md)
 * [PyExecJS：Node.js 与 Python 的桥梁库 ](pa-chong-pian/nodejs-yu-python-de-qiao-liang-ku-pyexecjs.md)
 * [爬虫三神器：phantomjs + selenium、自动填充文本框、自动点按钮](pa-chong-pian/ru-shou-pachong-li-qi-ff1a-phantomjs-+-selenium-3001-zi-dong-tian-chong-wen-ben-kuang-3001-zi-dong-dian-an-niu.md)
-* 利用phantomjs+selenium抓取基金网站JS生成的页面、python的装饰器、@property
-* 完整抓取基金网站N页JS生成的内容、多进程入门、分布式进程数据共享
+* [利用phantomjs+selenium抓取基金网站JS生成的页面、python的装饰器、@property](pa-chong-pian/li-yong-phantomjs-+-selenium-zhua-qu-ji-jin-wang-zhan-js-sheng-cheng-de-ye-mian-3001-python-de-zhuang-shi-qi-3001-property.md)
+* [完整抓取基金网站N页JS生成的内容、多进程入门、分布式进程数据共享](pa-chong-pian/wan-zheng-zhua-qu-ji-jin-wang-zhan-n-ye-js-sheng-cheng-de-nei-rong-3001-duo-jin-cheng-ru-men-3001-fen-bu-shi-jin-cheng-shu-ju-gong-xiang.md)
 
 ## pandas数据分析篇
 

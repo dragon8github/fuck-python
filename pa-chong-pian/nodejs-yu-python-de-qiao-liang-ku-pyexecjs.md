@@ -17,12 +17,19 @@ $ python -m pip install PyExecJS
 
 ```py
 import execjs
-print(execjs.get().name); # Node.js (V8)
+print(execjs.get().name) # Node.js (V8)
 
-js=execjs.get();
-
-result=js.eval("1+2")
+js_engine = execjs.get();
+result = js_engine.eval("1+2")
 print(result) # 3
+
+js="""
+    const str = "Hello";
+    let getHello = name => str + ", " + name;
+"""
+compile = js_engine.compile(js)
+result = compile.call('getHello', 'World')
+print(result) # Hello, World
 ```
 
 ![](/assets/啊实打实的着自行车自行车23123import.png)

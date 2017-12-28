@@ -1,5 +1,7 @@
 ### sqlacodegen： ORM实体类自动生成工具
 
+![](/assets/asdasdzxczhfgimport.png)
+
 > [https://pypi.python.org/pypi/sqlacodegen/](https://pypi.python.org/pypi/sqlacodegen/)
 
 #### 安装
@@ -76,7 +78,7 @@ class JtNew(Base):
 
 ---
 
-### 自动探测编码（GBK/UTF8）
+### 自动探测网页编码（GBK/UTF8）
 
 > [https://github.com/chardet/chardet](https://github.com/chardet/chardet)
 
@@ -115,4 +117,6 @@ print(result)
 ```
 
 ---
+
+
 

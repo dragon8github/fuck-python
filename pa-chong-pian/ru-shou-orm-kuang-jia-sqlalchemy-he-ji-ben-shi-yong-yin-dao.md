@@ -1,5 +1,7 @@
 ### 安装SQLAlchemy
 
+![](/assets/asdasdzxcimport.png)
+
 > [http://docs.sqlalchemy.org/en/latest/faq/connections.html](http://docs.sqlalchemy.org/en/latest/faq/connections.html)
 >
 > [http://docs.sqlalchemy.org/en/latest/intro.html\#installation](http://docs.sqlalchemy.org/en/latest/intro.html#installation)

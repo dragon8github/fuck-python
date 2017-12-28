@@ -11,6 +11,7 @@
 * [多版本python共存策略、模块/包的导入导出](ji-chu-pian/duo-ban-ben-python-gong-cun-3001-mo-kuai-3001-bao-de-dao-ru-3001-locals-globals-sys-path-de-zuo-yong.md)
 * [pip的使用、安装虚拟环境\(venv\)、试玩爬虫相关库\(beautiful soup\)](ji-chu-pian/pipde-shi-yong-3001-an-zhuang-xunihuan-588328-venv-3001-shi-wan-pa-chong-xiang-guan-5e9328-beautiful-soup.md)
 * [读取文件、OS模块、is和==、id\(\)、异常捕获、with as 语法、类的生命周期](ji-chu-pian/du-qu-wen-jian-3001-os-mo-kuai-3001-is-548c3d3d-3001-yi-chang-chu-bu-3001-with-as-yu-fa-chu-li-yi-chang.md)
+* [常用的函数：digit 和 numeric、filter、join、lambda表达式](pa-chong-pian/digithe-numeric-filter-join.md)
 
 ## 爬虫篇
 
@@ -19,7 +20,7 @@
 * [pymysql、增删改查、日期格式化、基金数据抓取并入库 ](pa-chong-pian/ru-shou-pymysql-3001-zeng-shan-gai-cha-3001-ri-qi-ge-shi-hua-3001-ji-jin-shu-ju-zhua-qu-bing-ru-ku.md)
 * [ORM框架 SQLAlchemy 的基本使用](pa-chong-pian/ru-shou-orm-kuang-jia-sqlalchemy-he-ji-ben-shi-yong-yin-dao.md)
 * [自动生成ORM实体类、自动探测网页编码（GBK/UTF8）](pa-chong-pian/zi-dong-sheng-cheng-orm-shi-ti-lei-3001-zhua-qu-ji-jin-wang-zhan-js-xing-shi-de-shu-ju-3001-python-zhi-xing-js-bing-jie-xi.md)
-* [digit 和 numeric、filter、join、lambda表达式](pa-chong-pian/digithe-numeric-filter-join.md)
+* [PyExecJS：Node.js 与 Python 的桥梁库 ](pa-chong-pian/nodejs-yu-python-de-qiao-liang-ku-pyexecjs.md)
 * [入手爬虫利器：phantomjs+selenium、自动填充文本框、自动点按钮](pa-chong-pian/ru-shou-pachong-li-qi-ff1a-phantomjs-+-selenium-3001-zi-dong-tian-chong-wen-ben-kuang-3001-zi-dong-dian-an-niu.md)
 * 利用phantomjs+selenium抓取基金网站JS生成的页面、python的装饰器、@property
 * 完整抓取基金网站N页JS生成的内容、多进程入门、分布式进程数据共享

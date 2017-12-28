@@ -12,5 +12,20 @@ phantomjs好比是一个无界面的浏览器内核，可以用它来执行脚�
 
 ---
 
+#### selenium
+
+它是一个 web自动化测试框架，可以模拟一些人工操作，比如点击按钮、输入文本、填充表单等等
+
+[http://seleniumhq.github.io/selenium/docs/api/py/](http://seleniumhq.github.io/selenium/docs/api/py/)
+
+#### 安装
+
+```
+$ cd C:\python\venv\Lee\Scripts
+$ python -m pip install selenium
+```
+
+
+
 
 

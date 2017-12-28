@@ -39,7 +39,21 @@
 
 ---
 
-在cmd中使用python进入母体，但按下Ctrl + C 无法退出。需要手动使用exit\(\) 即可
+### 小技巧
+
+1、在cmd中使用python进入母体，但按下Ctrl + C 无法退出。需要手动使用exit\(\) 即可
 
 ![](/assets/135667import.png)
+
+2、python中使用print打印时，如果遇到object和list等复杂类型时似乎不能完整打印出来。解决方案是强制转化为list类型。
+
+```py
+def isInt(item):
+    return item.isdigit()
+
+print(filter(isInt, 'ab123ef'))  # <filter object at 0x00535350>
+print(list(filter(isInt, 'ab123ef'))) # 小技巧，使用强制转化为list可以输出内容：['1', '2', '3']
+```
+
+![](/assets/dssdadasadssdadasdasasimport.png)
 

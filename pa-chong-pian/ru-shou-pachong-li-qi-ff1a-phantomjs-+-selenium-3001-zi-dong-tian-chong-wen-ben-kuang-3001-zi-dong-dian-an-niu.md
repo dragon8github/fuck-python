@@ -20,12 +20,22 @@ phantomjs好比是一个无界面的浏览器内核，可以用它来执行脚�
 
 #### 安装
 
-```
+```bash
 $ cd C:\python\venv\Lee\Scripts
 $ python -m pip install selenium
 ```
 
+根据老外的说明，它最终运行需要驱动（geckodriver）。可以使用官方告诉我们的chrome或firefox等，但是这些都不是我们想要的。我们需要的是刚刚我们创建的phantomjs。
 
+```py
+from selenium import webdriver
+driver = webdriver.PhantomJS(executable_path=r'C:\PhantomJS.exe')
+driver.get("https://www.baidu.com/")
+searchBox=driver.find_element_by_id("kw")
+searchBtn=driver.find_element_by_id("su")
+searchBox.send_keys("jtthink.com")
+searchBtn.click()
+```
 
-
+---
 

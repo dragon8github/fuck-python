@@ -16,7 +16,7 @@
 
 ---
 
-1.1  新建 jt\_news 数据表
+**1.1  新建 jt\_news 数据表**
 
 ```php
 SET FOREIGN_KEY_CHECKS=0;
@@ -44,9 +44,9 @@ INSERT INTO `jt_news` VALUES ('4', 'js前后端分离开发网站项目的案例
 INSERT INTO `jt_news` VALUES ('5', '开发中php和js结合的项目案例', '开发中php和js结合的项目案例摘要', '2017-06-04 13:59:14', '12', '实战开发');
 ```
 
-1.2  由于我是在虚拟环境中安装的，所以需要先进入。
+**1.2  使用sqlacodegen **
 
-然后按 pymysql 的方式创建实体类。并且放置在我的桌面中。
+由于我是在虚拟环境中安装的，所以需要先进入。然后按 pymysql 的方式创建实体类。并且放置在我的桌面中。
 
 ```
 $ cd C:\python\venv\Lee\Scripts
@@ -54,6 +54,8 @@ $ sqlacodegen --tables jt_news --outfile C:\Users\lizhaohong\Desktop\ffffffff.py
 ```
 
 ![](/assets/asdasddkcoasimport.png)
+
+**1.3  生成结果**
 
 生成的 ffffffff.py 的源码如下：
 
@@ -124,7 +126,7 @@ print(result)
 
 ```py
 print('4'.isdigit())  true
-print('四'.isdigit()) false
+print('四'.isdigit()) false
 
 print('4'.isnumeric()) true
 print('四'.isnumeric()) true
@@ -132,13 +134,14 @@ print('四'.isnumeric()) true
 
 ---
 
-### **filter 函数 与 lambda表达式**
+### filter 函数 与 lambda表达式
 
-```
-def isInt(item):    
+```py
+def isInt(item):
     return item.isdigit()
 
-
+print(filter(isInt, 'ab123ef'))  # <filter object at 0x00535350>
+print(list(filter(isInt, 'ab123ef'))) # 小技巧，使用强制转化为list可以输出内容：['1', '2', '3']
 ```
 
 

@@ -60,10 +60,8 @@ $ sqlacodegen --tables jt_news --outfile C:\Users\lizhaohong\Desktop\ffffffff.py
 from sqlalchemy import Column, DateTime, Integer, String, Text, text
 from sqlalchemy.ext.declarative import declarative_base
 
-
 Base = declarative_base()
 metadata = Base.metadata
-
 
 class JtNew(Base):
     __tablename__ = 'jt_news'
@@ -77,6 +75,17 @@ class JtNew(Base):
 ```
 
 ---
+
+### 自动探测编码（GBK/UTF8）
+
+> https://github.com/chardet/chardet
+
+#### 安装
+
+```bash
+$ cd C:\python\venv\Lee\Scripts
+$ python -m pip install chardet
+```
 
 
 

@@ -78,7 +78,7 @@ class JtNew(Base):
 
 ### 自动探测编码（GBK/UTF8）
 
-> https://github.com/chardet/chardet
+> [https://github.com/chardet/chardet](https://github.com/chardet/chardet)
 
 #### 安装
 
@@ -87,5 +87,32 @@ $ cd C:\python\venv\Lee\Scripts
 $ python -m pip install chardet
 ```
 
+#### EXAMPLE
 
+新建一个package，命名Spider，接着在包中新建 Fund.py
+
+```py
+# 基金抓取
+from urllib import request
+import chardet
+from bs4 import BeautifulSoup
+
+def getHtml(pageUrl):
+    response = request.urlopen(pageUrl)
+    raw_html = response.read()
+    getEncoding = chardet.detect(raw_html)['encoding']
+    return raw_html.decode(getEncoding)
+```
+
+index.py
+
+```py
+from Spider.Fund import getHtml
+
+page_url = "http://fund.eastmoney.com/fund.html"
+result = getHtml(page_url)
+print(result)
+```
+
+---
 

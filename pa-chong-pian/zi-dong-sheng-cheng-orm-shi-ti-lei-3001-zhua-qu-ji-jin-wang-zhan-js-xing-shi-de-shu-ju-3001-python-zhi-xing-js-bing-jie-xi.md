@@ -122,8 +122,6 @@ print(result)
 
 ### 判断是否为数字：digit 和 numeric
 
-**EXAMPLE**
-
 ```py
 print('4'.isdigit())  true
 print('四'.isdigit()) false

@@ -138,8 +138,11 @@ print('四'.isnumeric()) true
 def isInt(item):
     return item.isdigit()
 
-print(filter(isInt, 'ab123ef'))  # <filter object at 0x00535350>
+print(filter(isInt, 'ab123ef'))       # <filter object at 0x00535350>
 print(list(filter(isInt, 'ab123ef'))) # 小技巧，使用强制转化为list可以输出内容：['1', '2', '3']
+
+# 使用 lambda 表达式可以抒写匿名函数
+print(list(filter(lambda x: x.isdigit(), 'ab123ef'))) # ['1', '2', '3']
 ```
 
 

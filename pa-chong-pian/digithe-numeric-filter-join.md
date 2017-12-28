@@ -27,7 +27,7 @@ print(list(filter(lambda x: x.isdigit(), 'ab123ef'))) # ['1', '2', '3']
 
 #### join 函数：将数组转化为字符串
 
-```
+```py
 print('-'.join(filter(lambda x:x.isdigit(),'ab123ef'))) # 1-2-3
 ```
 

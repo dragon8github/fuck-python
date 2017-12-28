@@ -23,7 +23,7 @@ js_engine = execjs.get();
 result = js_engine.eval("1+2")
 print(result) # 3
 
-js="""
+js = """
     const str = "Hello";
     let getHello = name => str + ", " + name;
 """
@@ -32,7 +32,7 @@ result = compile.call('getHello', 'World')
 print(result) # Hello, World
 ```
 
-![](/assets/啊实打实的着自行车自行车23123import.png)
+![](/assets/xzczxc54zx45cx54xcz54zcximport.png)
 
 ---
 

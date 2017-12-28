@@ -1,5 +1,7 @@
 ### phantomjs：无界面的浏览器内核
 
+![](/assets/asdasd123123import.png)
+
 phantomjs好比是一个无界面的浏览器内核，可以用它来执行脚本 。隐形的执行CSS选择、DOM操作等
 
 官网地址：[http://phantomjs.org/download.html](http://phantomjs.org/download.html)

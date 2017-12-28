@@ -145,5 +145,13 @@ print(list(filter(isInt, 'ab123ef'))) # 小技巧，使用强制转化为list可
 print(list(filter(lambda x: x.isdigit(), 'ab123ef'))) # ['1', '2', '3']
 ```
 
+---
 
+#### join函数，将数组转化为字符串
+
+```
+print('-'.join(filter(lambda x:x.isdigit(),'ab123ef'))) # 1-2-3
+```
+
+---
 

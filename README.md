@@ -57,3 +57,11 @@ print(list(filter(isInt, 'ab123ef'))) # 小技巧，使用强制转化为list可
 
 ![](/assets/dssdadasadssdadasdasasimport.png)
 
+3、lambda 表达式是洁癖程序媛的福音。通过它可以编写匿名函数。
+
+```py
+print(list(filter(lambda x: x.isdigit(), 'ab123ef'))) # ['1', '2', '3']
+```
+
+
+

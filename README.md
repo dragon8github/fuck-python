@@ -7,6 +7,7 @@
 | 组合键 | 功能 |
 | :--- | :--- |
 | CTRL + SHIFT + L | 格式化代码 |
+| SHIFT \* 2 | Search Eventhing |
 
 #### 官方文档
 

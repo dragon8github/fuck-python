@@ -118,5 +118,28 @@ print(result)
 
 ---
 
+### 判断是否为数字：digit 和 numeric
+
+**EXAMPLE**
+
+```py
+print('4'.isdigit())  true
+print('四'.isdigit()) false
+
+print('4'.isnumeric()) true
+print('四'.isnumeric()) true
+```
+
+---
+
+### **filter 函数 与 lambda表达式**
+
+```
+def isInt(item):    
+    return item.isdigit()
+
+
+```
+
 
 

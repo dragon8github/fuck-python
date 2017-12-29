@@ -41,7 +41,5 @@ searchBtn.click()
 
 这里有一个神坑，必须指定PhantomJS.exe的绝对路径才可以正常使用。
 
----
-
 
 

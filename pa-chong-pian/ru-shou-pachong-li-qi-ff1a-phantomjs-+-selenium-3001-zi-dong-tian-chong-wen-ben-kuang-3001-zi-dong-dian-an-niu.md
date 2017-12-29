@@ -39,7 +39,7 @@ searchBox.send_keys("jtthink.com")
 searchBtn.click()
 ```
 
-这里有一个神坑，必须制定PhantomJS.exe的路径才可以正常使用。
+这里有一个神坑，必须指定PhantomJS.exe的绝对路径才可以正常使用。
 
 ---
 

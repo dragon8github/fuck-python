@@ -37,3 +37,40 @@ newDoraemon()
 
 ![](/assets/imasdasd123123port.png)
 
+---
+
+### 带参数的装饰器
+
+```py
+# 装饰器
+def Decorator(Doraemon):
+    # 给哆啦A梦加入竹蜻蜓
+    def surPerDoraemon(type):
+        Doraemon()
+        if (type == 'A'):
+            print("哆啦A梦使用了竹蜻蜓")
+
+        elif (type == 'B'):
+            print("哆啦A梦使用了时光机")
+            
+        else:
+            print("哆啦A梦表示无能为力")
+
+    # 返回一个超级哆啦A梦
+    return surPerDoraemon
+
+
+# 初级哆啦A梦
+def Doraemon():
+    print("我只是一只没有耳朵的机器猫")
+
+
+# 通过装饰器给哆啦A梦添加功能
+newDoraemon = Decorator(Doraemon)
+newDoraemon('A')
+newDoraemon('B')
+newDoraemon('C')
+```
+
+
+

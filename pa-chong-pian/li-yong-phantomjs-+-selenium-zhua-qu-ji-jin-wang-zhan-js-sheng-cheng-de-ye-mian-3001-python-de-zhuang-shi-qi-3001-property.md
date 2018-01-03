@@ -47,8 +47,9 @@ newDoraemon()
 # 装饰器
 def Decorator(Doraemon):
     # 给哆啦A梦加入竹蜻蜓
-    def surPerDoraemon(*type):
+    def surPerDoraemon(type = ''):
         Doraemon()
+
         if (type == 'A'):
             print("哆啦A梦使用了竹蜻蜓")
 
@@ -76,7 +77,7 @@ newDoraemon('B')
 
 **Result**
 
-### ![](/assets/asdsadzxczxcimport.png)
+### ![](/assets/sdasd123123123import.png)
 
 ---
 
@@ -90,8 +91,9 @@ newDoraemon('B')
 # 装饰器
 def FuckDecorator(Doraemon):
     # 给哆啦A梦加入竹蜻蜓
-    def surPerDoraemon(*type):
+    def surPerDoraemon(type = ''):
         Doraemon()
+
         if (type == 'A'):
             print("哆啦A梦使用了竹蜻蜓")
 
@@ -103,7 +105,6 @@ def FuckDecorator(Doraemon):
 
     # 返回一个超级哆啦A梦
     return surPerDoraemon
-
 
 # 通过@装饰器给哆啦A梦添加功能
 @FuckDecorator
@@ -117,5 +118,9 @@ Doraemon('B')
 
 **result**
 
-![](/assets/asdsadzxczxcimport.png)
+![](/assets/asdazxczxcimport.png)
+
+---
+
+
 

@@ -41,7 +41,7 @@ newDoraemon()
 
 ### 带参数的装饰器
 
-### Example
+**Example**
 
 ```py
 # 装饰器
@@ -74,7 +74,48 @@ newDoraemon('A')
 newDoraemon('B')
 ```
 
-### Result![](/assets/asdsadzxczxcimport.png)
+**Result**
+
+###  ![](/assets/asdsadzxczxcimport.png)
+
+---
+
+### @符号出现了
+
+@是python中的一个装饰器语法糖，多说无益直接看代码。
+
+**Example**
+
+```py
+# 装饰器
+def Decorator(Doraemon):
+    # 给哆啦A梦加入竹蜻蜓
+    def surPerDoraemon(*type):
+        Doraemon()
+        if (type == 'A'):
+            print("哆啦A梦使用了竹蜻蜓")
+
+        elif (type == 'B'):
+            print("哆啦A梦使用了时光机")
+
+        else:
+            print("哆啦A梦表示无能为力")
+
+    # 返回一个超级哆啦A梦
+    return surPerDoraemon
 
 
+# 通过@装饰器给哆啦A梦添加功能
+@Decorator
+def Doraemon():
+    print("我只是一只没有耳朵的机器猫")
+
+Doraemon()
+Doraemon('A')
+Doraemon('B')
+```
+
+**result**
+
+![](/assets/asdsadzxczxcimport.png)
 

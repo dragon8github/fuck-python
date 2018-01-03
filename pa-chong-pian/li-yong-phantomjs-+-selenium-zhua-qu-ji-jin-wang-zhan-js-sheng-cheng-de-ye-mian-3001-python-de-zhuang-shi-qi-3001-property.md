@@ -41,18 +41,20 @@ newDoraemon()
 
 ### 带参数的装饰器
 
+### Example
+
 ```py
 # 装饰器
 def Decorator(Doraemon):
     # 给哆啦A梦加入竹蜻蜓
-    def surPerDoraemon(type):
+    def surPerDoraemon(*type):
         Doraemon()
         if (type == 'A'):
             print("哆啦A梦使用了竹蜻蜓")
 
         elif (type == 'B'):
             print("哆啦A梦使用了时光机")
-            
+
         else:
             print("哆啦A梦表示无能为力")
 
@@ -67,10 +69,12 @@ def Doraemon():
 
 # 通过装饰器给哆啦A梦添加功能
 newDoraemon = Decorator(Doraemon)
+newDoraemon()
 newDoraemon('A')
 newDoraemon('B')
-newDoraemon('C')
 ```
+
+### Result![](/assets/asdsadzxczxcimport.png)
 
 
 

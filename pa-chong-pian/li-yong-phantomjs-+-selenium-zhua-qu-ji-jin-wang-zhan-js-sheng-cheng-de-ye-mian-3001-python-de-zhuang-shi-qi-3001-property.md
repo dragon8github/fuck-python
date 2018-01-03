@@ -15,14 +15,16 @@
 ```py
 # 装饰器
 def Decorator(Doraemon):
+
+    # 在原有哆啦A梦的基础上加入竹蜻蜓
     def surPerDoraemon():
         Doraemon()
         print("我拥有一个竹蜻蜓")
-    
-    # 返回一个加强版哆啦A梦
+
+    # 返回一个超级哆啦A梦
     return surPerDoraemon
 
-# 哆啦A梦
+# 初级哆啦A梦
 def Doraemon():
     print("我只是一只没有耳朵的机器猫")
 

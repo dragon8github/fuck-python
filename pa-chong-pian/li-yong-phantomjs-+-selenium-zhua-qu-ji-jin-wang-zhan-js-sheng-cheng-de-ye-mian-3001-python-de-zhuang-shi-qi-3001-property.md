@@ -155,16 +155,16 @@ def Decorator(sex=''):
         return BoyDoraemon
 
 @Decorator()
-def Doraemon_1():
+def Doraemon_no1():
     print("我只是一只没有耳朵的机器猫")
 
 @Decorator(sex='Girl')
-def Doraemon_2():
+def Doraemon_no2():
     print("我只是一只保姆型机器猫")
 
-Doraemon_1()
-Doraemon_2()
+Doraemon_no1()
+Doraemon_no2()
 ```
 
-
+![](/assets/的手段13123aimport.png)
 

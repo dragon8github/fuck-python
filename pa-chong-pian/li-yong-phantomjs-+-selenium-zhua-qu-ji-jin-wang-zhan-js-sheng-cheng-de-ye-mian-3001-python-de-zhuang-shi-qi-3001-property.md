@@ -13,7 +13,7 @@
 ### Example
 
 ```py
-# 装饰器
+# 哆啦A梦的装饰器
 def Decorator(Doraemon):
 
     # 给哆啦A梦加入竹蜻蜓
@@ -44,8 +44,9 @@ newDoraemon()
 **Example**
 
 ```py
-# 装饰器
+# 哆啦A梦的装饰器
 def Decorator(Doraemon):
+
     # 给哆啦A梦加入竹蜻蜓
     def surPerDoraemon(type = ''):
         Doraemon()
@@ -88,8 +89,9 @@ newDoraemon('B')
 **Example**
 
 ```py
-# 装饰器
+# 哆啦A梦的装饰器
 def FuckDecorator(Doraemon):
+
     # 给哆啦A梦加入竹蜻蜓
     def surPerDoraemon(type = ''):
         Doraemon()
@@ -125,6 +127,44 @@ Doraemon('B')
 ### 带参数的装饰器 与 高阶函数
 
 高阶函数是函数式编程的一个重要概念：指的是如果一个函数，接受一个函数作为参数，并且返回一个函数。那么这个函数就是高阶函数。高阶函数的做法和装饰器十分吻合。所以我们可以带参数的装饰器轻松实现。
+
+```py
+# 哆啦A梦的装饰器
+def Decorator(sex=''):
+
+    # 男性哆啦A梦
+    def BoyDoraemon(Doraemon):
+        def surPerDoraemon():
+            Doraemon()
+            print("我叫哆啦A梦")
+
+        return surPerDoraemon
+
+    # 女性哆啦A梦
+    def GirlDoraemon(Doraemon):
+        def surPerDoraemon():
+            Doraemon()
+            print("我叫哆啦美")
+
+        return surPerDoraemon
+
+    # 根据装饰器的入参sex判断返回哪个类型
+    if (sex.lower() == 'girl'):
+        return GirlDoraemon
+    else:
+        return BoyDoraemon
+
+@Decorator()
+def Doraemon_1():
+    print("我只是一只没有耳朵的机器猫")
+
+@Decorator(sex='Girl')
+def Doraemon_2():
+    print("我只是一只保姆型机器猫")
+
+Doraemon_1()
+Doraemon_2()
+```
 
 
 

@@ -76,7 +76,7 @@ newDoraemon('B')
 
 **Result**
 
-###  ![](/assets/asdsadzxczxcimport.png)
+### ![](/assets/asdsadzxczxcimport.png)
 
 ---
 
@@ -88,7 +88,7 @@ newDoraemon('B')
 
 ```py
 # 装饰器
-def Decorator(Doraemon):
+def FuckDecorator(Doraemon):
     # 给哆啦A梦加入竹蜻蜓
     def surPerDoraemon(*type):
         Doraemon()
@@ -106,7 +106,7 @@ def Decorator(Doraemon):
 
 
 # 通过@装饰器给哆啦A梦添加功能
-@Decorator
+@FuckDecorator
 def Doraemon():
     print("我只是一只没有耳朵的机器猫")
 

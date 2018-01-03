@@ -16,7 +16,7 @@
 # 装饰器
 def Decorator(Doraemon):
 
-    # 在原有哆啦A梦的基础上加入竹蜻蜓
+    # 给哆啦A梦加入竹蜻蜓
     def surPerDoraemon():
         Doraemon()
         print("我拥有一个竹蜻蜓")

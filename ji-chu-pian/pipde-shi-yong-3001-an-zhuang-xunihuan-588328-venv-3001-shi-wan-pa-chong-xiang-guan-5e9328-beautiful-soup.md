@@ -78,7 +78,7 @@ $ python -m pip install beautifulsoup4
 
 ![](/assets/12341234234import.png)
 
-安装完成后，我们可以在Lee虚拟环境中找到Lib\site-packages\bs4，就是我们刚刚安装的BeautifulSoup4了
+安装完成后，我们可以在Lee虚拟环境中找到 **Lib\site-packages\bs4**，这就是我们刚刚安装的BeautifulSoup4了。
 
 ![](/assets/13123123123import.png)
 
@@ -111,7 +111,7 @@ print(soup.html.head)
 
 由于我们使用的是虚拟环境中的python.exe，所以运行的时候需要指定该环境下的python.exe
 
-（ps：也可以先cd到虚拟目录下，然后执行python，因为会先从当前目录下查找，然后再去系统环境下查找）
+**PS：也可以先进入到虚拟目录下，然后执行python.exe，这是因为系统会先从当前目录下查找，如果没有再去系统环境变量中查找**
 
 > $ :/python/venv/Lee/Scripts/python.exe test.py
 >

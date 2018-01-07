@@ -58,7 +58,7 @@ $ activate.bat
 
 ![](/assets/1435324import.png)
 
-这样我们就进入了虚拟环境
+这样我们就进入了虚拟环境：**C:\python\venv\Lee\Scripts**
 
 ---
 
@@ -71,6 +71,8 @@ $ activate.bat
 先进入虚拟环境，然后使用如下命令安装
 
 ```
+$ cd C:\python\venv\Lee\Scripts
+
 $ python -m pip install beautifulsoup4
 ```
 

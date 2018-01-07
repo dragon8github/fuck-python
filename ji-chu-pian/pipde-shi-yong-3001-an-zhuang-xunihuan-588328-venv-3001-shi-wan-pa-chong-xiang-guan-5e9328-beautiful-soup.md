@@ -16,11 +16,11 @@ $ python -m pip help
 
 ![](/assets/124123import.png)
 
-### 手动安装pip
+### （可选）手动安装pip
 
 > [https://pypi.python.org/pypi/pip](https://pypi.python.org/pypi/pip)
 
-解压pip-9.0.1.tar.gz， 打开命令提示符 （开始--运行--cmd 命令， 回车） 进入 pip-9.0.1目录下输入：
+解压pip-9.0.1.tar.gz，进入 pip-9.0.1目录下，打开命令行输入：
 
 ```bash
 $ python setup.py install

@@ -127,7 +127,11 @@ print(soup.html.head)
 
 ### pychar 配置 虚拟环境下的python.exe来执行和解析
 
-![](/assets/15123123123import.png)这样就可以解析了，如果不配置（使用默认的python解析）会报错说找不到bs4模块
+如果你没有使用虚拟环境安装bs4模块可以跳过这一步。
 
-![](/assets/3524625626import.png)
+由于我将bs4模块安装在虚拟环境下，如果不配置，会报错说模块找不到。![](/assets/15123123123import.png)
+
+### Result![](/assets/3524625626import.png)
+
+
 

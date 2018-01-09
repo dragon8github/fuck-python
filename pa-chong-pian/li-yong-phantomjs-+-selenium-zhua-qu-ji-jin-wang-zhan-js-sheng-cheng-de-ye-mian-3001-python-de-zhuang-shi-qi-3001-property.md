@@ -176,11 +176,15 @@ Doraemon_no2()
 
 ```py
 def Decorator(func):
-    # 1、由于我是装饰类方法，默认类方法的第一个参数是self（既类本身）
+    # 1、由于我是装饰类方法，默认类方法的第一个参数是self（既类本身）。
     # 2、由于元组Tuple是无法删除第一个元素的，所以必须先使用list()转换为数组
     # 3、如果数组元素中存在数字，那么join是无法打印出来的。所以需要先使用(str(v) for v in args)将数组中所有的项都转化为string类型
     def showPower(*args):
+        # 将元组转化为数组
         args = list(args)
+        # 执行原始函数，并给他self（既类本身）
+        func(args[0])
+        # 删除第一个默认参数self（既类本身）。
         del args[0]
         print('我拥有：' + ','.join(str(v) for v in args))
 
@@ -188,19 +192,20 @@ def Decorator(func):
 
 
 class Doraemon:
-    def __init__(self):
-        self.name = '哆啦A梦'
+    def __init__(self, **args):
+        # 关键字参数是一个dict类型，必须使用get方法来获取
+        self.name = args.get('name')
 
     @Decorator
     def sayHi(self):
-        print("初次见面，我叫哆啦A梦")
+        print("初次见面，我叫" + self.name)
 
 
-doraemon = Doraemon()
+doraemon = Doraemon(name='哆啦A梦')
 doraemon.sayHi('竹蜻蜓', '时光机', '百宝袋')
 ```
 
-> 我拥有：竹蜻蜓,时光机,百宝袋
+![](/assets/asdsa123123123import.png)
 
 
 

@@ -207,5 +207,26 @@ doraemon.sayHi('竹蜻蜓', '时光机', '百宝袋')
 
 ![](/assets/asdsa123123123import.png)
 
+---
 
+### 内置的装饰器
+
+staticmethod、classmethod和property，作用分别是把类中定义的实例方法变成静态方法、类方法和类属性
+
+```py
+class Doraemon:
+    def __init__(self, **args):
+        # 关键字参数是一个dict类型，必须使用get方法来获取
+        self.name = args.get('name')
+
+    @property
+    def sayHi(self):
+        return "初次见面，我叫" + self.name
+
+
+doraemon = Doraemon(name='哆啦A梦')
+print(doraemon.sayHi)
+```
+
+![](/assets/hjgjkhjkljklimport.png)
 

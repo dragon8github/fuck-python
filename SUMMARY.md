@@ -16,7 +16,7 @@
 ## 爬虫篇
 
 * [初识urllib、读取基金网站html、字节/字符/二进制、保存html文件](pa-chong-pian/chushi-urllib-3001-du-qu-ji-jin-wang-zhan-html-3001-zi-jie-3001-zi-fu-3001-er-jin-zhi-3001-bao-cun-html-wen-jian.md)
-* [元组的使用、使用BeautifulSoup抓取基金代码](pa-chong-pian/shi-yong-beautifulsoup-zhua-qu-ji-jin-dai-ma-3001-lei-ji-jing-zhi-3001-yuan-zu.md)
+* [tuple元组的使用、使用BeautifulSoup抓取基金代码](pa-chong-pian/shi-yong-beautifulsoup-zhua-qu-ji-jin-dai-ma-3001-lei-ji-jing-zhi-3001-yuan-zu.md)
 * [pymysql、增删改查、日期格式化、基金数据抓取并入库 ](pa-chong-pian/ru-shou-pymysql-3001-zeng-shan-gai-cha-3001-ri-qi-ge-shi-hua-3001-ji-jin-shu-ju-zhua-qu-bing-ru-ku.md)
 * [ORM框架 SQLAlchemy 的基本使用](pa-chong-pian/ru-shou-orm-kuang-jia-sqlalchemy-he-ji-ben-shi-yong-yin-dao.md)
 * [自动生成ORM实体类、自动探测网页编码（GBK/UTF8）](pa-chong-pian/zi-dong-sheng-cheng-orm-shi-ti-lei-3001-zhua-qu-ji-jin-wang-zhan-js-xing-shi-de-shu-ju-3001-python-zhi-xing-js-bing-jie-xi.md)
